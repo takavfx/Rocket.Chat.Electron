@@ -7,6 +7,7 @@ import editMenu from './menus/edit';
 import viewMenu from './menus/view';
 import windowMenu from './menus/window';
 import helpMenu from './menus/help';
+import chatMenu from './menus/chat';
 
 const Menu = remote.Menu;
 const APP_NAME = remote.app.getName();
@@ -26,6 +27,10 @@ const menuTemplate = [
     {
         label: getLabel('Edit'),
         submenu: editMenu
+    },
+    {
+        label: getLabel('Chat'),
+        submenu: chatMenu
     },
     {
         label: getLabel('View'),
